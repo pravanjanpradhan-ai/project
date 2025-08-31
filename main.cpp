@@ -8,12 +8,14 @@
 #include "Point.h"
 
 int main() {
+    Point p1(0.0,0.0);
+    Point p2(5.0,5.0);
+    Point p3(5.0,0.0);
     std::vector<Shape*> shapes;
-    shapes.push_back(new Point(5.0,0.0));
-    shapes.push_back(new Line(5.0));
-    shapes.push_back(new Circle(5.0));
-    shapes.push_back(new Rectangle(4.0, 6.0));
-    shapes.push_back(new Triangle(3.0, 4.0, 5.0));
+    shapes.push_back(new Line(p1,p2));
+    shapes.push_back(new Circle(p1,5.0));
+    shapes.push_back(new Rectangle(p1,p2));
+    shapes.push_back(new Triangle(p1,p2,p3));
 
     for (Shape* shape : shapes) {
         std::cout << shape->getName()

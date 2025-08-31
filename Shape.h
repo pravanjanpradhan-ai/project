@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <vector>
+#include "Point.h"
 
 // Abstract Base Class (Abstraction)
 class Shape {
@@ -16,4 +18,6 @@ public:
 
     // Common method
     std::string getName() const;
+
+    virtual std::vector<Point> getCoordinates() const=0 ; 
 };
