@@ -5,8 +5,8 @@
 class Rectangle : public Shape {
 private:
     Point p1;
-    Point p2;
     Point p3;
+    Point p2;
     Point p4;
     double width;
     double height;

@@ -4,8 +4,8 @@
 Rectangle::Rectangle(Point p1,Point p3)
     : Shape("Rectangle"), p1(p1),p3(p3),p2(p3.x,p1.y),p4(p1.x,p3.y) 
     {
-        width = abs(p3.x-p1.x);
-        height = abs(p3.y-p1.y);
+        width = abs(p2.x-p1.x);
+        height = abs(p3.y-p2.y);
     }
 
 double Rectangle::area() const {
