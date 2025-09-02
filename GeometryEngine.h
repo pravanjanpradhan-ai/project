@@ -1,0 +1,15 @@
+#pragma once
+#include <string>
+#include "Point.h"
+
+
+class GeometryEngine
+{
+public:
+    GeometryEngine();
+    ~GeometryEngine();
+
+    void createline(Point p1, Point p2);
+    void createrectangle(Point p1, Point p2);
+    void createtriangle(Point p1, Point p2, Point p3);
+};

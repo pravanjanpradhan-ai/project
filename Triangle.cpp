@@ -3,10 +3,14 @@
 #include <cmath>
 
 Triangle::Triangle(Point p1,Point p2,Point p3)
-    : Shape("Triangle"), p1(p1),p2(p2),p3(p3),l3(p1,p3),l2(p2,p3),l1(p1,p2) {
-    double sideA = l1.length();
-    double sideB = l2.length();
-    double sideC = l3.length();
+    : Shape("Triangle"), p1(p1),p2(p2),p3(p3)
+    {
+        Line l1(p1,p3);
+        Line l2(p2,p3);
+        Line l3(p1,p2);
+        double sideA = l1.length();
+        double sideB = l2.length();
+        double sideC = l3.length();
     }
 double Triangle::perimeter() const {  
     return sideA+sideB+sideC;

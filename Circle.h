@@ -1,6 +1,7 @@
 #pragma once
 #include "Shape.h"
 #include "Point.h"
+#include "FileWrite.h"
 
 class Circle : public Shape { // Inheritance
 private:
