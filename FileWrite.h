@@ -8,6 +8,8 @@
 #include "Triangle.h"
 #include "Line.h"
 #include "Point.h"
+#include "Circle.h"
+
 
 class FileWrite
 {

@@ -12,4 +12,5 @@ public:
     void createline(Point p1, Point p2);
     void createrectangle(Point p1, Point p2);
     void createtriangle(Point p1, Point p2, Point p3);
+    void createcircle(Point p1, double radius);
 };

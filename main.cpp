@@ -3,6 +3,7 @@
 #include "Shape.h"
 #include "Circle.h"
 #include "Rectangle.h"
+#include "Circle.h"
 #include "Triangle.h"
 #include "Line.h"
 #include "Point.h"
@@ -16,12 +17,13 @@ int main() {
     Point p1(0.0,0.0);
     Point p2(5.0,5.0);
     Point p3(0.0,5.0);
+    double radius=5;
     /* std::cout<<"write the name of the shape(Line,Triangle,Rectangle,Circle) : ";
     std::cin>>shape; */
     GeometryEngine g1;
     //g1.createline(p1,p2);
-    g1.createrectangle(p1,p2);
-
+    //g1.createrectangle(p1,p2);
+    g1.createcircle(p1,radius);
     /* Triangle coTri(p1,p2,p3);
     std::vector<Point> t = coTri.getCoordinates();
     FileWrite f1;
