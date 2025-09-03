@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Shapes Project",
+      "name": "Sketcher Project",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/shapes",

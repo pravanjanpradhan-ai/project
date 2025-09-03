@@ -7,4 +7,5 @@ public:
 
 public:
     Point(double a,double b);
+    Point(){}
 };
