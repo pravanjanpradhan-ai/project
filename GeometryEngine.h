@@ -13,4 +13,6 @@ public:
     void createrectangle(Point p1, Point p3);
     void createtriangle(Point p1, Point p2, Point p3);
     void createcircle(Point p1, double radius);
+
+    void createpolygon(Point p1, int sides);
 };

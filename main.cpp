@@ -8,6 +8,7 @@
 #include "Line.h"
 #include "Point.h"
 #include "FileWrite.h"
+#include "Polygon.h"
 #include <fstream>
 #include <string>
 #include "GeometryEngine.h"
@@ -18,6 +19,7 @@ int main() {
     Point p2;
     Point p3;
     double radius;
+    int sides;
     
     while(shape!=0){
     GeometryEngine g1;
@@ -26,6 +28,7 @@ int main() {
     cout<<"2. Rectangle"<<endl;
     cout<<"3. Circle "<<endl;
     cout<<"4. Line "<<endl;
+    cout<<"5. Polygon "<<endl;
     cout<<"0. End the operation"<<endl;
     cin>>shape;
     switch (shape)
@@ -64,6 +67,14 @@ int main() {
         cin>>p2.x>>p2.y;
         g1.createline(p1,p2);
         break;
+    case 5:
+        cout<<"Give the mid point of polygon as (x,y) and no of sides "<<endl;
+        cout<<"center point : ";
+        cin>>p1.x>>p1.y;
+        cout<<"No of sides: ";
+        cin>>sides;
+        g1.createpolygon(p1,sides);
+        break;
     case 0:
 
     default:
@@ -72,6 +83,8 @@ int main() {
     }
     
     }
+
+    
     std::cin.get();
 
     return 0;
